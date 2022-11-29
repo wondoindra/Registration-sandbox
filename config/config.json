@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "wfghcorh",
+    "password": "qXiJBx9DNQWbTWB4izSLl_7qw2Cupngg",
+    "database": "wfghcorh",
+    "host": "tiny.db.elephantsql.com",
+    "dialect": "postgresql"
+  },
+  "test": {
+    "username": "wfghcorh",
+    "password": "qXiJBx9DNQWbTWB4izSLl_7qw2Cupngg",
+    "database": "wfghcorh",
+    "host": "tiny.db.elephantsql.com",
+    "dialect": "postgresql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
