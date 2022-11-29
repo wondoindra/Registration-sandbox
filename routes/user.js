@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const User = require('../models/user')
+const { passwordValidate } = require('../validation')
 
 router.get("/:id", (req, res) => {
   if (!req.params.id) res.send("Provide ID")
@@ -15,9 +16,15 @@ router.get("/:id", (req, res) => {
 router.post("/signup", (req, res) => {
   res.send("Signup API")
 
+  const { email, password } = req.body
+  if (!email || !password) res.send("Missing required fields")
+
+  const validPassword = passwordValidate(password)
+  if (!validPassword) res.send("Password must match the following: 1 lower character, 1 upper character, 1 digit, 1 special and minimum 8 length")
+
   const data = {
-    email: req.body.email,
-    password: req.body.password,
+    email,
+    password,
   }
 
   const user = User.create(data)
