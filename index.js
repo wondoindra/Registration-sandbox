@@ -11,6 +11,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/user', user)
+app.use('/', (req, res) => {
+  res.send('<html><b>Signup API Frontpage</b></html>')
+})
 
 app.listen(PORT)
 console.log(`app running port ${PORT}`)
