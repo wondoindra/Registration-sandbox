@@ -22,6 +22,6 @@
 ---
 
 ## Email notification using Mailtrap as Sandbox
-### Check email sent to sandbox using account login credentials:
+### Check email sent to Mailtrap sandbox in [Mailtrap](https://mailtrap.io) using login credentials:
 ### wondoindra28@gmail.com== , 123123
-### Navigate to *Sandbox* -> *Inboxes*
+### Navigate to *Sandbox* -> *Inboxes* -> *My Inboxes*
