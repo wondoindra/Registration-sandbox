@@ -14,9 +14,9 @@
     "dialect": "postgresql"
   },
   "production": {
-    "username": "lhxkhwth",
-    "password": "wEBc9GJ853GaC1SyyCjswOFWcsAI-kr5",
-    "database": "lhxkhwth",
+    "username": "wfghcorh",
+    "password": "qXiJBx9DNQWbTWB4izSLl_7qw2Cupngg",
+    "database": "wfghcorh",
     "host": "tiny.db.elephantsql.com",
     "dialect": "postgresql"
   }
